@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{699258b6-180f-4c00-accc-a9d5892fef00}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>card.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="ps5\words.txt" />
+    <Content Include="ps6\words.txt" />
+    <Content Include="ps8\subjects.txt" />
+    <Content Include="shapes.txt" />
+    <Content Include="subjects.txt" />
+    <Content Include="test.txt" />
+    <Content Include="TestFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="card.py" />
+    <Compile Include="cardGame.py" />
+    <Compile Include="deck.py" />
+    <Compile Include="drawpython.py" />
+    <Compile Include="fileInputAndOutput.py" />
+    <Compile Include="hand.py" />
+    <Compile Include="playCards.py" />
+    <Compile Include="ps0.py" />
+    <Compile Include="ps1a.py" />
+    <Compile Include="ps1b.py" />
+    <Compile Include="ps2a.py" />
+    <Compile Include="ps2b.py" />
+    <Compile Include="ps2c.py" />
+    <Compile Include="ps3a.py" />
+    <Compile Include="ps3b.py" />
+    <Compile Include="ps3c.py" />
+    <Compile Include="ps3d.py" />
+    <Compile Include="ps4%281%29.py" />
+    <Compile Include="ps4.py" />
+    <Compile Include="ps5\ps5.py" />
+    <Compile Include="ps5\ps5_ghost.py" />
+    <Compile Include="ps5\test_ps5.py" />
+    <Compile Include="ps6\ps6.py" />
+    <Compile Include="ps7rev.py" />
+    <Compile Include="ps8\ps8.py" />
+    <Compile Include="ps9.py" />
+    <Compile Include="pythonHasNames.py" />
+    <Compile Include="showTime.py" />
+    <Compile Include="sorts.py" />
+    <Compile Include="swap.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ps5" />
+    <Folder Include="ps6" />
+    <Folder Include="ps8" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
